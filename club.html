@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Le Club des lettres | Ancré par Chemins</title>
+<meta name="description" content="Chaque mois, une lettre de Caelan écrite à la main, sa transcription tapuscrite, une petite papeterie pour écrire et trois stickers des Terres de Cyan.">
+<meta property="og:title" content="Le Club des lettres">
+<meta property="og:description" content="De la magie dans ta boîte aux lettres, chaque mois.">
+<style>
+  :root {
+    --encre: #2b2a24;
+    --encre-douce: #6d6856;
+    --vert: #33503f;
+    --vert-fonce: #27402f;
+    --trait: #2b2a24;
+    --fond: #ffffff;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--fond);
+    color: var(--encre);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+  }
+  img { display: block; max-width: 100%; }
+  a { color: inherit; }
+  :focus-visible { outline: 3px solid var(--vert); outline-offset: 3px; }
+
+  .site {
+    padding: 1.5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+  }
+
+  main { max-width: 36rem; margin: 0 auto; padding: 0 1.5rem 3rem; }
+
+  h1 {
+    margin: 1.5rem 0 2rem;
+    font-size: clamp(2.4rem, 9vw, 3.2rem);
+    line-height: 1.1;
+  }
+  h2 { margin: 3.5rem 0 1.5rem; font-size: 2rem; line-height: 1.2; }
+
+  .visuel { margin: 0 auto 2rem; max-width: 22rem; }
+  .visuel img { width: 100%; }
+
+  .boutons { display: flex; flex-direction: column; align-items: center; gap: 1rem; margin: 0 0 2.5rem; }
+  .bouton {
+    display: inline-block;
+    min-width: 16rem;
+    padding: 1.1rem 2rem;
+    border-radius: 14px;
+    background: var(--vert);
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: .04em;
+    font-size: 1rem;
+    font-weight: 700;
+  }
+  .bouton:hover { background: var(--vert-fonce); }
+
+  main p { margin: 0 0 1.4rem; }
+  .tirets { list-style: none; margin: -.8rem 0 1.4rem; padding: 0; }
+  .tirets li::before { content: "- "; }
+  .note { font-style: italic; }
+
+  details { border-top: 1px solid var(--trait); }
+  details:last-of-type { border-bottom: 1px solid var(--trait); }
+  summary {
+    position: relative;
+    padding: 1.2rem 2.5rem 1.2rem 0;
+    list-style: none;
+    cursor: pointer;
+    color: var(--encre-douce);
+  }
+  summary::-webkit-details-marker { display: none; }
+  summary::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: var(--encre);
+  }
+  details[open] summary::after { content: "–"; }
+  details p { margin: 0 0 1.2rem; }
+
+  footer { padding: 3rem 1rem; text-align: center; }
+  footer .nom { margin: 0 0 1rem; font-size: 1.4rem; font-weight: 700; }
+  footer p { margin: .4rem 0; }
+</style>
+</head>
+<body>
+
+<a class="site" href="https://www.instagram.com/ichi__.writes._books/">Ancré par Chemins</a>
+
+<main>
+  <h1>Le Club des lettres</h1>
+
+  <figure class="visuel">
+    <img src="club.jpg" alt="Une lettre du club écrite à la main, avec sa papeterie et ses stickers" onerror="this.closest('figure').remove()">
+  </figure>
+
+  <div class="boutons">
+    <a class="bouton" href="https://buy.stripe.com/28E5kweiUaN3eMr4zbfIs00">S'abonner</a>
+  </div>
+
+  <p>De la magie dans ta boîte aux lettres, chaque mois.</p>
+
+  <p>Chaque mois, Caelan t'écrit. Jeune archiviste enfermé au sommet d'une tour des Terres de Cyan, il te raconte un morceau de son monde : une forêt, une créature, une coutume.</p>
+
+  <p>Chaque mois, tu reçois :</p>
+  <ul class="tirets">
+    <li>Une lettre de Caelan, écrite à la main</li>
+    <li>Sa transcription tapuscrite, pour la lire facilement</li>
+    <li>Une petite papeterie pour écrire, différente chaque mois (carte peinte, carte-enveloppe, papier parchemin…)</li>
+    <li>Trois stickers des Terres de Cyan</li>
+  </ul>
+
+  <!-- À MODIFIER CHAQUE MOIS -->
+  <p class="note">Lettre n°1 : inscriptions jusqu'au 31 octobre, envoi dans la première quinzaine de novembre.</p>
+  <!-- FIN DE LA PARTIE À MODIFIER -->
+
+  <p>12 € par mois. Les frais de port (lettre sans suivi) en France et à La Réunion sont inclus dans le prix.</p>
+
+  <p>Les lettres partent de La Réunion dans la première quinzaine du mois. Tu peux t'abonner à n'importe quel moment jusqu'à la fin du mois pour recevoir la lettre du mois suivant.</p>
+
+  <p>Abonnement sans engagement, résiliable à tout moment.</p>
+
+  <div class="boutons">
+    <a class="bouton" href="https://billing.stripe.com/p/login/28E5kweiUaN3eMr4zbfIs00">Gérer mon abonnement</a>
+  </div>
+
+  <h2>Questions fréquentes</h2>
+
+  <details>
+    <summary>Quand ma lettre est-elle envoyée ?</summary>
+    <p>Dans la première quinzaine du mois qui suit ton inscription. Les lettres partent de La Réunion : compte quelques jours d'acheminement en plus vers la métropole.</p>
+  </details>
+
+  <details>
+    <summary>L'envoi est-il suivi ?</summary>
+    <p>Non, chaque lettre part en courrier simple, sans numéro de suivi.</p>
+  </details>
+
+  <details>
+    <summary>Je n'ai pas reçu ma lettre, que faire ?</summary>
+    <p>Écris-moi sur Instagram : on regarde ensemble ce qui s'est passé.</p>
+  </details>
+
+  <details>
+    <summary>Comment gérer ou annuler mon abonnement ?</summary>
+    <p>Clique sur « Gérer mon abonnement », saisis l'adresse e-mail utilisée lors du paiement puis suis le lien reçu. Tu peux y changer d'adresse ou de carte, ou résilier. La résiliation prend effet à la fin du mois déjà payé.</p>
+  </details>
+
+  <details>
+    <summary>Qui écrit ces lettres ?</summary>
+    <p>Moi, Mathilde. J'écris à la main Les Terres de Cyan, un roman de fantasy. Le club me permet de partager ce monde avant sa publication.</p>
+  </details>
+
+  <h2>Me contacter</h2>
+  <p>Une question ? Écris-moi sur Instagram : <a href="https://www.instagram.com/ichi__.writes._books/">@ichi__.writes._books</a></p>
+</main>
+
+<footer>
+  <p class="nom">Ancré par Chemins</p>
+  <p><a href="https://www.instagram.com/ichi__.writes._books/">Instagram</a></p>
+  <p>Paiement sécurisé par Stripe</p>
+</footer>
+
+</body>
+</html>
